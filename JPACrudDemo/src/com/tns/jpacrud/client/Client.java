@@ -14,8 +14,8 @@ StudentService service = new StudentServiceImpl();
 Student student = new Student();
 
 // Create Operation
-student.setStudentId(107);
-student.setName("Manisha");
+student.setStudentId(110);
+student.setName("Divya");
 service.addStudent(student);
 
 //at this breakpoint, we have added one record to table
@@ -25,8 +25,8 @@ System.out.print("ID:"+student.getStudentId());
 System.out.println(" Name:"+student.getName());
 
 //Update Operation
-student = service.findStudentById(102);
-student.setName("Sai Pranith");
+student = service.findStudentById(107);
+student.setName("John");
 service.updateStudent(student);
 
 
@@ -37,7 +37,7 @@ System.out.println(" Name:"+student.getName());
 
 //at this breakpoint, record is removed from table
 //Delete Operation
-student = service.findStudentById(106);
+student = service.findStudentById(109);
 service.removeStudent(student);
 System.out.println("End of program/Life cycle completed..."); 
 

@@ -14,15 +14,15 @@ public class InheritanceTest {
 		
 		//create one employee
 		Employee employee = new Employee();
-		employee.setName("Neha");
-		employee.setSalary(35000);
+		employee.setName("Mounika");
+		employee.setSalary(45000);
 		em.persist(employee);
 		
 		//create one manager
 		Manager manager = new Manager();
-		manager.setName("Priya");
-		manager.setSalary(100000);
-		manager.setDepartmentName("Production");
+		manager.setName("Shiva Teja");
+		manager.setSalary(120000);
+		manager.setDepartmentName("Mechanical");
 		em.persist(manager);
 		
 		
