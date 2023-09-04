@@ -2,10 +2,10 @@ package day4;
 
 class Student
 {
-	 int rollno,marks;
+	int rollno,marks;
 	String name;
-	
-	 void input()
+
+	void input()
 	{
 		System.out.println("Enter rollno, name and marks :");
 	}
