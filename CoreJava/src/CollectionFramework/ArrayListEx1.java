@@ -13,7 +13,7 @@ public class ArrayListEx1
 		list.add("JAWA");
 		list.add("R15");
 		
-		System.out.println("Retuning elements :"+list.get(2));
+		System.out.println("Returning elements :"+list.get(2));
 		
 		list.set(1, "Royal Enfield");
 		

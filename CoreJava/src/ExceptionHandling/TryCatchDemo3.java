@@ -11,7 +11,7 @@ public class TryCatchDemo3 {
 		}
 		catch(ArithmeticException e)
 		{
-			System.out.println("Arithmetic Exceptiob occurs");
+			System.out.println("Arithmetic Exception occurs");
 		}
 		catch(ArrayIndexOutOfBoundsException e)
 		{

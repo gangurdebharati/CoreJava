@@ -7,7 +7,6 @@ public class FinallyTestDemo
 		try
 		{
 			System.out.println("Inside try block");
-			
 			int data=25/0;
 			System.out.println(data);
 		}

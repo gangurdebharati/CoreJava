@@ -7,16 +7,12 @@ public class TryCatchDemo4
         try
         {
         int data=50/0; //may throw exception  
-        
         }
-        catch(NullPointerException e)
+        catch(Exception e)
         {
         	System.out.println(e);
         }
           
         System.out.println("rest of the code");  
-          
     }  
-
-
 }

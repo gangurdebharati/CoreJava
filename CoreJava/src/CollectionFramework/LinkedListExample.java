@@ -1,9 +1,7 @@
 package CollectionFramework;
-
 import java.util.*;
-
-public class LinkedListExample {
-
+public class LinkedListExample 
+{
 	public static void main(String[] args) 
 	{
 		LinkedList<String> al=new LinkedList<String>();
