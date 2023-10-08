@@ -7,11 +7,13 @@ class TestGenerics1
 public static void main(String args[])
 {  
 ArrayList<String> list=new ArrayList<String>();  
-list.add("rahul");  
-list.add("jai");  
+list.add("Rahul");  
+list.add("Jai");
+list.add("Yash");
+list.add("Sabir");
 //list.add(32);//compile time error  
   
-String s=list.get(1);//type casting is not required  
+String s=list.get(3);//type casting is not required  
 System.out.println("element is: "+s);  
   
 Iterator<String> itr=list.iterator();  

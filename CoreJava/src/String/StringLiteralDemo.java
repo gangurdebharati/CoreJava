@@ -10,8 +10,12 @@ public class StringLiteralDemo
 		String b="Java";
 		System.out.println(b);
 		
-		a.concat("Course");
+		a=a.concat("Course");
 		System.out.println(a);
+		
+		
+		
+		
 	}
 
 }
