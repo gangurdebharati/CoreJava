@@ -14,30 +14,30 @@ StudentService service = new StudentServiceImpl();
 Student student = new Student();
 
 // Create Operation
-student.setStudentId(110);
-student.setName("Divya");
+student.setStudentId(115);
+student.setName("Namrata");
 service.addStudent(student);
 
 //at this breakpoint, we have added one record to table
 // Retrieve Operation
-student = service.findStudentById(101);
+student = service.findStudentById(102);
 System.out.print("ID:"+student.getStudentId());
 System.out.println(" Name:"+student.getName());
 
 //Update Operation
-student = service.findStudentById(107);
-student.setName("John");
+student = service.findStudentById(111);
+student.setName("Sneha");
 service.updateStudent(student);
 
 
 //at this breakpoint, we have updated record added in first section
-student = service.findStudentById(102);
+student = service.findStudentById(111);
 System.out.print("ID:"+student.getStudentId());
 System.out.println(" Name:"+student.getName()); 
 
 //at this breakpoint, record is removed from table
 //Delete Operation
-student = service.findStudentById(109);
+student = service.findStudentById(114);
 service.removeStudent(student);
 System.out.println("End of program/Life cycle completed..."); 
 
