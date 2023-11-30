@@ -14,12 +14,12 @@ public class Client {
 		em.getTransaction().begin();
 		
 		Student student = new Student();
-		student.setName("Jerry Rio");
+		student.setName("Vaibhav Kundekar");
 		Address homeAddress = new Address();
-		homeAddress.setStreet("120,Ashok Nagar");
-		homeAddress.setCity("Bhavnagar");
-		homeAddress.setState("Gujrat");
-		homeAddress.setZipCode("411 068");
+		homeAddress.setStreet("111,Ashok Nagar");
+		homeAddress.setCity("Pune");
+		homeAddress.setState("Maharashtra");
+		homeAddress.setZipCode("423 345");
 		
 		//inject address into student
 		student.setAddress(homeAddress);

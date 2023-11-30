@@ -16,6 +16,9 @@ public class Employee implements Serializable
 	
 	@Id
 	private int id;
+	private String name;
+	private double salary;
+	
 	public int getId() {
 		return id;
 	}
@@ -48,8 +51,7 @@ public class Employee implements Serializable
 		this.department = department;
 	}
 
-	private String name;
-	private double salary;
+	
 	
 	@ManyToOne
 	@JoinColumn(name="dept_no")

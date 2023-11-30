@@ -13,18 +13,18 @@ public class Client
 		em.getTransaction().begin();
 		
 		Department department=new Department();
-		department.setId(2);
-		department.setName("IT");
+		department.setId(5);
+		department.setName("Admin");
 		
 		Employee e1=new Employee();
-		e1.setId(1003);
-		e1.setName("Nick Fernadise");
-		e1.setSalary(50000);
+		e1.setId(1005);
+		e1.setName("Varad Desai");
+		e1.setSalary(60000);
 		
 		Employee e2=new Employee();
-		e2.setId(1004);
-		e2.setName("Nelson D'souza");
-		e2.setSalary(55000);
+		e2.setId(1006);
+		e2.setName("Soham Kore");
+		e2.setSalary(75000);
 		
 		department.addEmployee(e1);
 		department.addEmployee(e2);

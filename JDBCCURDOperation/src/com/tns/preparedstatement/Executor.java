@@ -8,19 +8,19 @@ public class Executor {
 		PreparedStatementInterface.showEmp();
 		
 		System.out.println("---Update name of Employee--");
-		PreparedStatementInterface.updateEmpName(5, "Krupa");
+		PreparedStatementInterface.updateEmpName(5, "Neeta");
 		PreparedStatementInterface.showEmp();
 		
 		System.out.println("---Update salary of Employee");
-		PreparedStatementInterface.updateEmpSalary(12, 43700);
+		PreparedStatementInterface.updateEmpSalary(16, 83700);
 		PreparedStatementInterface.showEmp();
 		
 		System.out.println("---Add Employee---");
-		PreparedStatementInterface.addEmployee(6, "Jenny", 78000);
+		PreparedStatementInterface.addEmployee(20, "Kavita", 88000);
 		PreparedStatementInterface.showEmp();
 		
 		System.out.println("---Deleted Employee---");
-		if(PreparedStatementInterface.deleteEmp(11)==false)
+		if(PreparedStatementInterface.deleteEmp(8)==false)
 		
 			System.err.println("No such employee found.....");
 		

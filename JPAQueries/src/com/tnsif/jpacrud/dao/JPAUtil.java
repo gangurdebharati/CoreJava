@@ -9,7 +9,8 @@ public class JPAUtil {
 	private static EntityManagerFactory factory;
 	private static EntityManager entityManager;
 	
-	static {
+	static 
+	{
 		factory = Persistence.createEntityManagerFactory("JPA-PU");
 	}
 	

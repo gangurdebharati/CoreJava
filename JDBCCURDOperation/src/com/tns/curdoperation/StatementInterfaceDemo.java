@@ -36,7 +36,7 @@ public class StatementInterfaceDemo
 		int n = 0;
 		try {
 
-			String query = "INSERT INTO emp VALUES(" + empId + ",'" + empName + "'," + empSalary + ")";
+			String query = "INSERT INTO employee VALUES(" + empId + ",'" + empName + "'," + empSalary + ")";
 			n = st.executeUpdate(query);
 		}
 		catch (SQLException e) {
@@ -51,7 +51,7 @@ public class StatementInterfaceDemo
 	public static int validateEmp(int empId) {
 		int n = 0;
 		try {
-			String query = "SELECT count(*) FROM emp where id=" + empId;
+			String query = "SELECT count(*) FROM employee where id=" + empId;
 			ResultSet rs = st.executeQuery(query);
 			if (rs.next()) {
 				if (rs.getInt(1) != 0)
@@ -72,7 +72,7 @@ public class StatementInterfaceDemo
 
 			int n = validateEmp(empId);
 			if (n == 1) {
-				String query = "DELETE FROM emp WHERE id=" + empId;
+				String query = "DELETE FROM employee WHERE id=" + empId;
 				st.executeUpdate(query);
 				status = true;
 			}
@@ -89,7 +89,7 @@ public class StatementInterfaceDemo
 		try {
 
 			if (validateEmp(empId) == 1) {
-				String query = "UPDATE emp set name='" + empName + "' WHERE id=" + empId;
+				String query = "UPDATE employee set name='" + empName + "' WHERE id=" + empId;
 				st.executeUpdate(query);
 				status = true;
 			} else
@@ -108,7 +108,7 @@ public class StatementInterfaceDemo
 		try {
 
 			if (validateEmp(empId) == 1) {
-				String query = "UPDATE emp SET salary=" + salary + " WHERE id=" + empId;
+				String query = "UPDATE employee SET salary=" + salary + " WHERE id=" + empId;
 				st.executeUpdate(query);
 				status = true;
 			} else
@@ -124,7 +124,7 @@ public class StatementInterfaceDemo
 	public static void showEmp() {
 		try {
 
-			String query = "SELECT * FROM emp";
+			String query = "SELECT * FROM employee";
 			ResultSet rs = st.executeQuery(query);
 
 			/*

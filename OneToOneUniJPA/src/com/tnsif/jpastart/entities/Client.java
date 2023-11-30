@@ -12,12 +12,12 @@ public class Client {
 		EntityManager em = factory.createEntityManager();
 		em.getTransaction().begin();
 		Student student = new Student();
-		student.setName("Tom Rio");
+		student.setName("Yash Mote");
 		Address homeAddress = new Address();
-		homeAddress.setStreet("Janata Market");
-		homeAddress.setCity("Pune");
+		homeAddress.setStreet("90 feet road");
+		homeAddress.setCity("Ghatkopar");
 		homeAddress.setState("Maharashtra");
-		homeAddress.setZipCode("411 015");
+		homeAddress.setZipCode("400 087");
 		
 		//inject address into student
 		student.setAddress(homeAddress);
